@@ -294,14 +294,7 @@ body {
 .product-tags {
     color: #888;
     font-size: 13px;
-    margin-bottom: 6px;
-}
-
-.product-schedule {
-    color: #ff6b35;
-    font-size: 13px;
     margin-bottom: 8px;
-    font-weight: 500;
 }
 
 .product-footer {
@@ -315,23 +308,11 @@ body {
     flex: 1;
 }
 
-.order-price-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 2px;
-}
-
-.order-count {
-    color: #888;
-    font-size: 12px;
-    margin: 0;
-}
-
 .price-section {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 4px;
 }
 
 .original-price {
