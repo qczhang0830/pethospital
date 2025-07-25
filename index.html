@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吾家24小时宠物医院</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 主图片区域 -->
+    <div class="hero-image">
+        <img src="images/hospital-interior.jpg" alt="医院内景" id="heroImg">
+        <div class="image-tags">
+            <span class="tag">封面</span>
+            <span class="tag">服务展示</span>
+            <span class="tag">环境设施</span>
+            <span class="tag">相册 ></span>
+        </div>
+    </div>
+
+    <!-- 医院信息 -->
+    <div class="hospital-info">
+        <div class="hospital-header">
+            <h1 class="hospital-name">吾家24小时宠物医院 🏥</h1>
+        </div>
+        <p class="hospital-ranking">杨浦区宠物医院人气排第6名 ></p>
+
+        <div class="hospital-details">
+            <div class="rating-section">
+                <div class="rating">
+                    <span class="rating-score">4.5</span>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <span class="review-count">199人评</span>
+                </div>
+                <div class="price-info">
+                    <span class="price">¥288/人</span>
+                    <span class="category">宠物医院 ></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="business-hours">
+            <span class="status open">营业中</span>
+            <span class="hours">周一至周日 18:00 -次日 02:00</span>
+        </div>
+
+        <div class="experience-info">
+            <span class="experience">收藏 7年</span>
+            <span class="parking">免费停车</span>
+        </div>
+
+        <div class="address-section">
+            <div class="address">
+                <span class="street">延安中路1123号 ></span>
+                <p class="subway">距地铁2号线淮海中路站步行370米</p>
+            </div>
+            <div class="contact-actions">
+                <button class="action-btn nav-btn" onclick="navigateToHospital()">🚗 打车</button>
+                <button class="action-btn call-btn" onclick="callHospital()">📞 电话</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 服务筛选 -->
+    <div class="service-filters">
+        <span class="filter-label">全部</span>
+        <span class="filter-item">神券</span>
+        <span class="filter-item">洗澡</span>
+        <span class="filter-item">美容</span>
+        <span class="filter-item">寄养</span>
+        <span class="filter-item">洁牙</span>
+        <span class="filter-item">疫苗</span>
+    </div>
+
+    <!-- 服务套餐货架 -->
+    <div class="service-packages">
+        <!-- 商品1: 公猫绝育 -->
+        <div class="product-card">
+            <div class="product-logo">
+                <div class="logo-bg">pet'em</div>
+                <div class="pet-image cat-1">🐱</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">公猫安心超声刀绝育10kg</h3>
+                <p class="product-tags">猫咪 不限体重 短毛</p>
+                <p class="product-schedule">最早可订 明日14:00</p>
+                <div class="product-footer">
+                    <div class="product-left">
+                        <div class="order-price-row">
+                            <p class="order-count">800人订过</p>
+                            <div class="price-section">
+                                <span class="original-price">¥715</span>
+                                <span class="current-price">¥268</span>
+                            </div>
+                        </div>
+                        <p class="promo-info">美团补贴 共省447></p>
+                    </div>
+                    <button class="book-btn">预订</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 商品2: 公狗绝育 -->
+        <div class="product-card">
+            <div class="product-logo">
+                <div class="logo-bg">pet'em</div>
+                <div class="pet-image dog-1">🐕</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">公狗超声刀绝育服务+麻醉服务</h3>
+                <p class="product-tags">狗狗 不限体重 不限毛长</p>
+                <p class="product-schedule">最早可订 明日14:00</p>
+                <div class="product-footer">
+                    <div class="product-left">
+                        <div class="order-price-row">
+                            <p class="order-count">800人订过</p>
+                            <div class="price-section">
+                                <span class="original-price">¥199</span>
+                                <span class="current-price">¥169</span>
+                            </div>
+                        </div>
+                        <p class="promo-info">新客特惠 共省30></p>
+                    </div>
+                    <button class="book-btn">预订</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 商品3: 母狗绝育 -->
+        <div class="product-card">
+            <div class="product-logo">
+                <div class="logo-bg">pet'em</div>
+                <div class="pet-image dog-2">🐕‍🦺</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">超声刀母狗绝育术</h3>
+                <p class="product-tags">狗狗 不限体重 不限毛长</p>
+                <p class="product-schedule">最早可订 明日14:00</p>
+                <div class="product-footer">
+                    <div class="product-left">
+                        <div class="order-price-row">
+                            <p class="order-count">800人订过</p>
+                            <div class="price-section">
+                                <span class="original-price">¥715</span>
+                                <span class="current-price">¥268</span>
+                            </div>
+                        </div>
+                        <p class="promo-info">美团补贴 共省447></p>
+                    </div>
+                    <button class="book-btn">预订</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 商品4: 母猫绝育 -->
+        <div class="product-card">
+            <div class="product-logo">
+                <div class="logo-bg">pet'em</div>
+                <div class="pet-image cat-2">🐈‍⬛</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">母猫绝育+术前检查+超声刀服务</h3>
+                <p class="product-tags">猫咪 不限体重 长毛</p>
+                <p class="product-schedule">最早可订 明日14:00</p>
+                <div class="product-footer">
+                    <div class="product-left">
+                        <div class="order-price-row">
+                            <p class="order-count">800人订过</p>
+                            <div class="price-section">
+                                <span class="original-price">¥239</span>
+                                <span class="current-price">¥222</span>
+                            </div>
+                        </div>
+                        <p class="promo-info">新客特惠 共省17></p>
+                    </div>
+                    <button class="book-btn">预订</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部展开按钮 -->
+        <div class="expand-all">
+            <span>全部 4 个预订 ></span>
+        </div>
+    </div>
+
+    <!-- AI问答入口 -->
+    <div class="ai-chat-entry">
+        <div class="chat-bubble">
+            <div class="ai-avatar">
+                <img src="images/kangaroo.svg" alt="AI助手" class="avatar-bg" />
+            </div>
+            <span class="chat-text">为你推荐更适合你家猫猫的绝育套餐</span>
+            <button class="ai-compare-btn" onclick="openAIChat()">AI对比</button>
+        </div>
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="bottom-nav">
+        <div class="nav-item">
+            <span class="nav-icon">🐾</span>
+            <span class="nav-text">宠物</span>
+        </div>
+        <div class="nav-item">
+            <span class="nav-icon">📞</span>
+            <span class="nav-text">电话咨询</span>
+        </div>
+        <div class="nav-item">
+            <span class="nav-icon">🎧</span>
+            <span class="nav-text">在线咨询</span>
+        </div>
+        <div class="nav-item active">
+            <span class="nav-icon">⬆️</span>
+            <span class="nav-text">回顶部</span>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

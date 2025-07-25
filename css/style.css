@@ -1,0 +1,503 @@
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+    background: #f5f5f5;
+    line-height: 1.4;
+}
+
+/* 主图片区域 */
+.hero-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 0 0 16px 16px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-tags {
+    position: absolute;
+    bottom: 12px;
+    left: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.tag {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    backdrop-filter: blur(4px);
+}
+
+/* 医院信息 */
+.hospital-info {
+    padding: 20px;
+    background: white;
+    margin: 16px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.hospital-header {
+    margin-bottom: 8px;
+}
+
+.hospital-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.hospital-ranking {
+    color: #666;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.hospital-details {
+    margin-bottom: 16px;
+}
+
+.rating-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating-score {
+    background: #ff6b35;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.stars {
+    font-size: 12px;
+}
+
+.review-count {
+    color: #666;
+    font-size: 14px;
+}
+
+.price-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.price {
+    color: #ff6b35;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.category {
+    color: #666;
+    font-size: 14px;
+}
+
+.business-hours {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.status.open {
+    background: #4caf50;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.hours {
+    color: #666;
+    font-size: 14px;
+}
+
+.experience-info {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.experience, .parking {
+    color: #666;
+    font-size: 14px;
+}
+
+.address-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.address {
+    flex: 1;
+}
+
+.street {
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.subway {
+    color: #666;
+    font-size: 12px;
+    margin: 4px 0 0 0;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    background: #f1f3f4;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background: #e8eaed;
+}
+
+/* 服务筛选 */
+.service-filters {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow-x: auto;
+    background: white;
+    margin: 0 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.filter-label {
+    background: #ff6b35;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    white-space: nowrap;
+    border: 1px solid #ff6b35;
+}
+
+.filter-item {
+    background: #f8f9fa;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+    border: 1px solid #e9ecef;
+}
+
+/* 服务套餐货架 */
+.service-packages {
+    padding: 16px 12px;
+    padding-bottom: 120px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 12px;
+}
+
+.product-logo {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.logo-bg {
+    width: 80px;
+    height: 80px;
+    background: #ff4757;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.pet-image {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    font-size: 24px;
+    background: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.product-tags {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.product-schedule {
+    color: #ff6b35;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+}
+
+.product-left {
+    flex: 1;
+}
+
+.order-price-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2px;
+}
+
+.order-count {
+    color: #888;
+    font-size: 12px;
+    margin: 0;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.original-price {
+    color: #999;
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.current-price {
+    color: #ff4757;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.promo-info {
+    color: #ff6b35;
+    font-size: 12px;
+}
+
+.book-btn {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    height: fit-content;
+}
+
+.expand-all {
+    text-align: center;
+    margin-top: 16px;
+    padding: 12px;
+}
+
+.expand-all span {
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* AI问答入口 */
+.ai-chat-entry {
+    position: fixed;
+    bottom: 90px;
+    left: 16px;
+    right: 16px;
+    z-index: 1000;
+}
+
+.chat-bubble {
+    background: rgba(240, 248, 255, 0.95);
+    padding: 12px 16px;
+    border-radius: 25px;
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.ai-avatar {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.avatar-bg {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.chat-text {
+    font-size: 14px;
+    color: #3b82f6;
+    flex: 1;
+    font-weight: 500;
+}
+
+.ai-compare-btn {
+    background: transparent;
+    color: #3b82f6;
+    border: 1.5px solid #3b82f6;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.ai-compare-btn:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* 底部导航 */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    padding: 8px 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.nav-item.active {
+    color: #ff6b35;
+}
+
+.nav-icon {
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.nav-text {
+    font-size: 10px;
+}
+
+/* 响应式 */
+@media (max-width: 480px) {
+    .hospital-info {
+        margin: 0 8px;
+        padding: 16px;
+    }
+
+    .service-filters {
+        padding: 12px 8px;
+        margin: 0 8px;
+    }
+
+    .service-packages {
+        padding: 12px 8px;
+        padding-bottom: 120px;
+    }
+
+    .rating-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .product-card {
+        padding: 12px;
+    }
+
+    .product-title {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,84 @@
+{
+  "hospitalInfo": {
+    "name": "吾家24小时宠物医院",
+    "englishName": "Our Home 24H Pet Hospital",
+    "rating": 4.5,
+    "reviewCount": 199,
+    "ranking": "杨浦区宠物医院人气排第6名",
+    "priceRange": "¥288/人",
+    "category": "宠物医院",
+    "businessHours": {
+      "status": "营业中",
+      "hours": "周一至周日 18:00 -次日 02:00",
+      "isOpen": true
+    },
+    "address": {
+      "street": "延安中路1123号",
+      "detail": "距地铁2号线淮海中路站步行370米",
+      "district": "杨浦区",
+      "city": "上海"
+    },
+    "contact": {
+      "phone": "021-12345678",
+      "emergencyPhone": "021-87654321"
+    },
+    "services": {
+      "emergency": true,
+      "surgery": true,
+      "checkup": true,
+      "vaccination": true,
+      "grooming": true,
+      "boarding": false
+    },
+    "certifications": [
+      "营业执照",
+      "动物诊疗许可证",
+      "兽医师执业证"
+    ],
+    "specialties": [
+      "内科诊疗",
+      "外科手术",
+      "影像诊断",
+      "实验室检测",
+      "紧急救护"
+    ]
+  },
+  "promotions": [
+    {
+      "type": "new_customer",
+      "title": "新客最至50",
+      "description": "新客户首次消费可享受最高50元优惠",
+      "discount": "最高50元",
+      "validUntil": "2024-12-31"
+    },
+    {
+      "type": "movie",
+      "title": "影片",
+      "description": "观看宠物护理教学影片",
+      "discount": "免费观看",
+      "validUntil": "长期有效"
+    },
+    {
+      "type": "cash_back",
+      "title": "满400减40",
+      "description": "消费满400元减40元",
+      "discount": "减40元",
+      "validUntil": "2024-11-30"
+    }
+  ],
+  "facilities": [
+    "手术室",
+    "X光机",
+    "B超设备",
+    "心电图机",
+    "生化分析仪",
+    "血常规分析仪",
+    "住院部",
+    "隔离病房"
+  ],
+  "staff": {
+    "veterinarians": 5,
+    "assistants": 8,
+    "totalExperience": 50
+  }
+}

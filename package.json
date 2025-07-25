@@ -1,0 +1,16 @@
+{
+  "name": "pet-hospital-demo",
+  "version": "1.0.0",
+  "description": "宠物医院demo - 移动端优先的宠物医院应用",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 8080 -o",
+    "dev": "npx http-server . -p 8080 -o -c-1"
+  },
+  "keywords": ["pet", "hospital", "mobile", "demo"],
+  "author": "Product Manager & Engineer",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

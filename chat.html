@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小团 - AI宠物医疗咨询</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat.css">
+</head>
+<body class="chat-body">
+    <!-- 顶部状态栏 -->
+    <img src="images/topbar.png" alt="状态栏" class="status-bar-image" id="topbarImg">
+
+    <!-- 聊天头部 -->
+    <div class="chat-header">
+        <button class="back-btn" onclick="goBack()">←</button>
+        <div class="chat-title">
+            <div class="bot-avatar">🤖</div>
+            <div class="bot-info">
+                <h3>小团</h3>
+                <p>为你推荐适合你的团购，解答专业知识</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 聊天消息区域 -->
+    <div class="chat-messages" id="chatMessages">
+        <div class="message user-message">
+            <div class="message-content">对比两个更适合我家猫的体检团购</div>
+        </div>
+
+        <div class="message bot-message">
+            <div class="message-content">
+                基于你看过的团购和你家8岁加菲猫的情况，建议你选择：
+
+                <div class="recommendation-card">
+                    <img src="images/senior-cat-checkup.jpg" alt="老年猫体检" class="service-image">
+                    <div class="service-info">
+                        <h4>老年/成年猫专项体检</h4>
+                        <div class="price">
+                            <span class="current-price">¥899</span>
+                            <span class="original-price">¥1268</span>
+                        </div>
+                        <button class="help-buy-btn">帮我买</button>
+                    </div>
+                </div>
+
+                <p class="recommendation-text">
+                    该团购包含心脏彩超和心脏听诊，更重风险预警，价格较高，但适合第一次做老年体检，8岁以上猫咪的全面健康评估。
+                </p>
+
+                <p>同时我也为你对比了你看过的团购项目，你可以根据个人需要来选择：</p>
+
+                <div class="compare-section">
+                    <div class="compare-header">
+                        <button class="more-suitable-btn">🔵 更适合你</button>
+                    </div>
+
+                    <div class="compare-table">
+                        <div class="compare-item">
+                            <div class="compare-title">对比商品</div>
+                            <div class="compare-option">
+                                <div class="option-info">
+                                    <h5>成年犬猫全方位体检套餐</h5>
+                                    <div class="option-price">
+                                        <span class="price">¥569</span>
+                                        <span class="original">¥968</span>
+                                    </div>
+                                </div>
+                                <span class="arrow">></span>
+                            </div>
+                            <div class="compare-option">
+                                <div class="option-info">
+                                    <h5>老年/成年猫专项体检</h5>
+                                    <div class="option-price">
+                                        <span class="price">¥899</span>
+                                        <span class="original">¥1268</span>
+                                    </div>
+                                </div>
+                                <span class="arrow">></span>
+                            </div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">适用年龄</div>
+                            <div class="compare-value">1-7岁成年猫/犬</div>
+                            <div class="compare-value">1岁以上成年猫及8岁及以上老年猫</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">适用宠物</div>
+                            <div class="compare-value">犬猫均可用</div>
+                            <div class="compare-value">仅猫可用</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">适用场景</div>
+                            <div class="compare-value">健康预检或打疫苗前检查</div>
+                            <div class="compare-value">第一次做全面老年体检，有慢病高风险的情况</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">基础检查</div>
+                            <div class="compare-value checkmark">✅</div>
+                            <div class="compare-value checkmark">✅</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">血常规</div>
+                            <div class="compare-value checkmark">✅</div>
+                            <div class="compare-value checkmark">✅</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">生化检查</div>
+                            <div class="compare-value">生化8项</div>
+                            <div class="compare-value">生化16项</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">B超</div>
+                            <div class="compare-value">无</div>
+                            <div class="compare-value">·腹部B超<br>·心脏彩超</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">影像检查</div>
+                            <div class="compare-value">无</div>
+                            <div class="compare-value">X光（正侧位）</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">心电图</div>
+                            <div class="compare-value">无</div>
+                            <div class="compare-value checkmark">✅</div>
+                        </div>
+
+                        <div class="compare-item">
+                            <div class="compare-title">尿检普检</div>
+                            <div class="compare-value checkmark">✅</div>
+                            <div class="compare-value checkmark">✅</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="follow-up-text">还有什么想了解的对比信息吗，可以告诉我哦</p>
+
+                <div class="message-actions">
+                    <button class="action-btn">💬</button>
+                    <button class="action-btn">👍</button>
+                    <button class="action-btn">👎</button>
+                    <button class="action-btn share">📤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 输入区域 -->
+    <div class="chat-input-area">
+        <div class="input-container">
+            <div class="input-wrapper">
+                <span class="voice-icon">🎤</span>
+                <input type="text" placeholder="有问题尽管询问我..." id="messageInput" />
+                <button class="send-btn" id="sendBtn">AI对比</button>
+            </div>
+        </div>
+        <p class="disclaimer">回答由AI生成，仅供参考</p>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

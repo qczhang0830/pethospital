@@ -1,0 +1,85 @@
+[
+  {
+    "id": "1",
+    "title": "成年犬猫全方位体检套餐",
+    "subtitle": "成年猫 5类检查项目",
+    "price": 569,
+    "originalPrice": 968,
+    "discount": "6.1折",
+    "purchaseCount": "月销800+",
+    "category": "体检",
+    "image": "images/comprehensive-checkup.jpg",
+    "description": "包含血常规、生化8项、基础检查、尿检等全面检查项目",
+    "features": [
+      "基础检查",
+      "血常规",
+      "生化8项",
+      "尿检普检",
+      "医生诊断"
+    ],
+    "ageRange": "1-7岁成年猫/犬",
+    "applicablePets": "犬猫均可用"
+  },
+  {
+    "id": "2",
+    "title": "犬猫基础体检",
+    "subtitle": "成年犬猫 3类检查项目",
+    "price": 388,
+    "originalPrice": 620,
+    "discount": "4.6折",
+    "purchaseCount": "5小时前有人购买",
+    "category": "基础",
+    "image": "images/basic-checkup.jpg",
+    "description": "适合健康预检或打疫苗前的基础检查",
+    "features": [
+      "基础检查",
+      "血常规",
+      "尿检普检"
+    ],
+    "ageRange": "1-7岁成年猫/犬",
+    "applicablePets": "犬猫均可用"
+  },
+  {
+    "id": "3",
+    "title": "老年/成年猫专项体检",
+    "subtitle": "8岁以上老年猫 7类检查项目",
+    "price": 899,
+    "originalPrice": 1268,
+    "discount": "7.4折",
+    "purchaseCount": "5小时前有人购买",
+    "category": "专项",
+    "image": "images/senior-cat-checkup.jpg",
+    "description": "专为老年猫设计的全面体检，包含心脏彩超和风险预警",
+    "features": [
+      "基础检查",
+      "血常规",
+      "生化16项",
+      "腹部B超",
+      "心脏彩超",
+      "X光(正侧位)",
+      "心电图",
+      "尿检普检"
+    ],
+    "ageRange": "1岁以上成年猫及8岁以上老年猫",
+    "applicablePets": "仅猫可用"
+  },
+  {
+    "id": "4",
+    "title": "家庭新成员犬猫传染病检测套餐",
+    "subtitle": "全年龄犬猫 3类检查项目",
+    "price": 436,
+    "originalPrice": 697,
+    "discount": "5.2折",
+    "purchaseCount": "月销800+",
+    "category": "检测",
+    "image": "images/infection-test.jpg",
+    "description": "新宠物入户必备的传染病检测套餐",
+    "features": [
+      "传染病筛查",
+      "血常规",
+      "基础检查"
+    ],
+    "ageRange": "全年龄犬猫",
+    "applicablePets": "犬猫均可用"
+  }
+]

@@ -1,0 +1,380 @@
+/* 聊天页面专用样式 */
+.chat-body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 状态栏图片 */
+.status-bar-image {
+    width: 100%;
+    height: auto;
+    max-height: 50px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+    z-index: 1000;
+}
+
+/* 聊天头部 */
+.chat-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+}
+
+.chat-header .back-btn {
+    color: white;
+    font-size: 18px;
+}
+
+.chat-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.bot-avatar {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.bot-info h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.bot-info p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* 聊天消息区域 */
+.chat-messages {
+    flex: 1;
+    padding: 20px 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.message {
+    display: flex;
+    max-width: 85%;
+}
+
+.user-message {
+    align-self: flex-end;
+}
+
+.user-message .message-content {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 12px 16px;
+    border-radius: 18px 18px 4px 18px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.bot-message {
+    align-self: flex-start;
+}
+
+.bot-message .message-content {
+    background: rgba(255, 255, 255, 0.95);
+    color: #333;
+    padding: 16px;
+    border-radius: 18px 18px 18px 4px;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: none;
+}
+
+/* 推荐卡片 */
+.recommendation-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px 0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.service-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    background: #e0e0e0;
+}
+
+.service-info {
+    flex: 1;
+}
+
+.service-info h4 {
+    font-size: 14px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.current-price {
+    color: #e91e63;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.original-price {
+    color: #999;
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.help-buy-btn {
+    background: #ff6b35;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.recommendation-text {
+    color: #666;
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+/* 对比部分 */
+.compare-section {
+    margin: 16px 0;
+    background: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.compare-header {
+    background: #e3f2fd;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.more-suitable-btn {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.compare-table {
+    background: white;
+}
+
+.compare-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 1fr;
+    gap: 8px;
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+}
+
+.compare-item:last-child {
+    border-bottom: none;
+}
+
+.compare-title {
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+}
+
+.compare-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.option-info h5 {
+    font-size: 12px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.option-price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.option-price .price {
+    color: #e91e63;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.option-price .original {
+    color: #999;
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.arrow {
+    color: #999;
+    font-size: 12px;
+}
+
+.compare-value {
+    font-size: 12px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.compare-value.checkmark {
+    color: #4caf50;
+    font-size: 16px;
+}
+
+.follow-up-text {
+    color: #666;
+    margin: 16px 0 12px;
+    font-size: 14px;
+}
+
+/* 消息操作按钮 */
+.message-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.action-btn {
+    background: none;
+    border: 1px solid #e0e0e0;
+    padding: 6px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+    background: #f5f5f5;
+}
+
+.action-btn.share {
+    margin-left: auto;
+}
+
+/* 输入区域 */
+.chat-input-area {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 12px 16px 20px;
+}
+
+.input-container {
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 24px;
+    padding: 8px 16px;
+    gap: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.voice-icon {
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+}
+
+#messageInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: none;
+}
+
+#messageInput::placeholder {
+    color: #999;
+}
+
+.send-btn {
+    background: #2196f3;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.send-btn:hover {
+    background: #1976d2;
+}
+
+.disclaimer {
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    margin: 0;
+}
+
+/* 响应式设计 */
+@media (min-width: 768px) {
+    .chat-body {
+        max-width: 414px;
+        margin: 0 auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message {
+    animation: fadeInUp 0.3s ease-out;
+}
