@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="css/chat.css">
 </head>
 <body class="chat-body">
-    <!-- 顶部状态栏 -->
-    <img src="images/topbar.png" alt="状态栏" class="status-bar-image" id="topbarImg">
-
     <!-- 聊天头部 -->
     <div class="chat-header">
         <button class="back-btn" onclick="goBack()">←</button>
         <div class="chat-title">
-            <div class="bot-avatar">🤖</div>
+            <div class="bot-avatar">
+                <img src="images/kangaroo.svg" alt="AI助手" class="avatar-img" />
+            </div>
             <div class="bot-info">
                 <h3>小团</h3>
                 <p>为你推荐适合你的团购，解答专业知识</p>
@@ -34,7 +33,7 @@
                 基于你看过的团购和你家8岁加菲猫的情况，建议你选择：
 
                 <div class="recommendation-card">
-                    <img src="images/senior-cat-checkup.jpg" alt="老年猫体检" class="service-image">
+                    <img src="images/hospital-interior.jpg" alt="老年猫体检" class="service-image">
                     <div class="service-info">
                         <h4>老年/成年猫专项体检</h4>
                         <div class="price">
@@ -52,10 +51,6 @@
                 <p>同时我也为你对比了你看过的团购项目，你可以根据个人需要来选择：</p>
 
                 <div class="compare-section">
-                    <div class="compare-header">
-                        <button class="more-suitable-btn">🔵 更适合你</button>
-                    </div>
-
                     <div class="compare-table">
                         <div class="compare-item">
                             <div class="compare-title">对比商品</div>

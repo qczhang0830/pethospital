@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>吾家24小时宠物医院</title>
+    <title>安安爱宠宠物医院</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -45,14 +45,14 @@
         </div>
 
         <div class="experience-info">
-            <span class="experience">收藏 7年</span>
+            <span class="experience">收录7年</span>
             <span class="parking">免费停车</span>
         </div>
 
         <div class="address-section">
             <div class="address">
-                <span class="street">延安中路1123号 ></span>
-                <p class="subway">距地铁2号线淮海中路站步行370米</p>
+                <span class="street">黄兴路221号 ></span>
+                <p class="subway">距地铁12号线宁国路站步行800m</p>
             </div>
             <div class="contact-actions">
                 <button class="action-btn nav-btn" onclick="navigateToHospital()">🚗 打车</button>
@@ -70,8 +70,8 @@
 
     <!-- 服务套餐货架 -->
     <div class="service-packages">
-        <!-- 商品1: 公猫绝育 -->
-        <div class="product-card">
+        <!-- 绝育商品1: 公猫绝育 -->
+        <div class="product-card" data-category="绝育">
             <div class="product-logo">
                 <div class="logo-bg">pet'em</div>
                 <div class="pet-image cat-1">🐱</div>
@@ -87,13 +87,13 @@
                         </div>
                         <p class="promo-info">美团补贴 共省447></p>
                     </div>
-                    <button class="book-btn">预订</button>
+                    <button class="book-btn">抢购</button>
                 </div>
             </div>
         </div>
 
-        <!-- 商品2: 公狗绝育 -->
-        <div class="product-card">
+        <!-- 绝育商品2: 公狗绝育 -->
+        <div class="product-card" data-category="绝育">
             <div class="product-logo">
                 <div class="logo-bg">pet'em</div>
                 <div class="pet-image dog-1">🐕</div>
@@ -109,13 +109,13 @@
                         </div>
                         <p class="promo-info">新客特惠 共省30></p>
                     </div>
-                    <button class="book-btn">预订</button>
+                    <button class="book-btn">抢购</button>
                 </div>
             </div>
         </div>
 
-        <!-- 商品3: 母狗绝育 -->
-        <div class="product-card">
+        <!-- 绝育商品3: 母狗绝育 -->
+        <div class="product-card" data-category="绝育">
             <div class="product-logo">
                 <div class="logo-bg">pet'em</div>
                 <div class="pet-image dog-2">🐕‍🦺</div>
@@ -131,13 +131,13 @@
                         </div>
                         <p class="promo-info">美团补贴 共省447></p>
                     </div>
-                    <button class="book-btn">预订</button>
+                    <button class="book-btn">抢购</button>
                 </div>
             </div>
         </div>
 
-        <!-- 商品4: 母猫绝育 -->
-        <div class="product-card">
+        <!-- 绝育商品4: 母猫绝育 -->
+        <div class="product-card" data-category="绝育">
             <div class="product-logo">
                 <div class="logo-bg">pet'em</div>
                 <div class="pet-image cat-2">🐈‍⬛</div>
@@ -153,19 +153,102 @@
                         </div>
                         <p class="promo-info">新客特惠 共省17></p>
                     </div>
-                    <button class="book-btn">预订</button>
+                    <button class="book-btn">抢购</button>
                 </div>
             </div>
         </div>
 
-        <!-- 底部展开按钮 -->
-        <div class="expand-all">
-            <span>全部 4 个预订 ></span>
+        <!-- 体检商品1: 成年犬猫全方位体检套餐 -->
+        <div class="product-card" data-category="体检">
+            <div class="product-logo">
+                <div class="logo-bg">pet'em</div>
+                <div class="pet-image cat-3">🐱</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">成年犬猫全方位体检套餐</h3>
+                <p class="product-tags">成年猫 5类检查项目</p>
+                <div class="product-footer">
+                    <div class="product-left">
+                        <div class="price-section">
+                            <span class="original-price">¥968</span>
+                            <span class="current-price">¥569</span>
+                        </div>
+                        <p class="promo-info">美团补贴 共省399> <span class="discount">6.1折</span></p>
+                    </div>
+                    <button class="book-btn">抢购</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 体检商品2: 犬猫基础体检 -->
+        <div class="product-card" data-category="体检">
+            <div class="product-logo">
+                <div class="logo-bg">pet'em</div>
+                <div class="pet-image dog-3">🐕</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">犬猫基础体检</h3>
+                <p class="product-tags">成年犬猫 3类检查项目</p>
+                <div class="product-footer">
+                    <div class="product-left">
+                        <div class="price-section">
+                            <span class="original-price">¥620</span>
+                            <span class="current-price">¥388</span>
+                        </div>
+                        <p class="promo-info">美团补贴 共省332> <span class="discount">4.6折</span></p>
+                    </div>
+                    <button class="book-btn">抢购</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 体检商品3: 老年/成年猫专项体检 -->
+        <div class="product-card" data-category="体检">
+            <div class="product-logo">
+                <div class="logo-bg">pet'em</div>
+                <div class="pet-image cat-4">🐱</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">老年/成年猫专项体检</h3>
+                <p class="product-tags">8岁以上老年猫 7类检查项目</p>
+                <div class="product-footer">
+                    <div class="product-left">
+                        <div class="price-section">
+                            <span class="original-price">¥1268</span>
+                            <span class="current-price">¥899</span>
+                        </div>
+                        <p class="promo-info">美团补贴 共省332> <span class="discount">7.4折</span></p>
+                    </div>
+                    <button class="book-btn">抢购</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 体检商品4: 家庭新成员犬猫传染病检测套餐 -->
+        <div class="product-card" data-category="体检">
+            <div class="product-logo">
+                <div class="logo-bg">pet'em</div>
+                <div class="pet-image dog-4">🐕</div>
+            </div>
+            <div class="product-info">
+                <h3 class="product-title">家庭新成员犬猫传染病检测套餐</h3>
+                <p class="product-tags">全年龄犬猫 3类检查项目</p>
+                <div class="product-footer">
+                    <div class="product-left">
+                        <div class="price-section">
+                            <span class="original-price">¥897</span>
+                            <span class="current-price">¥436</span>
+                        </div>
+                        <p class="promo-info">美团补贴 共省463> <span class="discount">5.2折</span></p>
+                    </div>
+                    <button class="book-btn">抢购</button>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- AI问答入口 -->
-    <div class="ai-chat-entry">
+    <div class="ai-chat-entry" style="display: none;">
         <div class="chat-bubble">
             <div class="ai-avatar">
                 <img src="images/kangaroo.svg" alt="AI助手" class="avatar-bg" />
@@ -182,22 +265,6 @@
             <span class="nav-text">宠物</span>
         </div>
         <div class="nav-item">
-            <span class="nav-icon">📞</span>
-            <span class="nav-text">电话咨询</span>
-        </div>
-        <div class="nav-item">
-            <span class="nav-icon">🎧</span>
-            <span class="nav-text">在线咨询</span>
-        </div>
-        <div class="nav-item active">
-            <span class="nav-icon">⬆️</span>
-            <span class="nav-text">回顶部</span>
-        </div>
-    </div>
-
-    <script src="js/main.js"></script>
-</body>
-</html>
             <span class="nav-icon">📞</span>
             <span class="nav-text">电话咨询</span>
         </div>
