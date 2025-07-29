@@ -115,6 +115,63 @@
     backdrop-filter: blur(10px);
 }
 
+/* Tab导航样式 */
+.tab-navigation {
+    display: flex;
+    margin: 16px 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    background: transparent;
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+    background: #4A90E2;
+    color: white;
+    box-shadow: 0 2px 4px rgba(74, 144, 226, 0.3);
+}
+
+.tab-btn:hover:not(.active) {
+    background: rgba(74, 144, 226, 0.1);
+    color: #4A90E2;
+}
+
+/* Tab内容样式 */
+.tab-content {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.summary-text {
+    color: #555;
+    margin: 16px 0;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
 /* 推荐卡片 */
 .recommendation-card {
     background: white;

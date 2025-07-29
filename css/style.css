@@ -77,12 +77,14 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
+    flex-wrap: nowrap;
 }
 
 .rating {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-shrink: 0;
 }
 
 .rating-score {
@@ -107,6 +109,8 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-shrink: 0;
+    margin-left: auto;
 }
 
 .price {
@@ -136,17 +140,6 @@ body {
 }
 
 .hours {
-    color: #666;
-    font-size: 14px;
-}
-
-.experience-info {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 16px;
-}
-
-.experience, .parking {
     color: #666;
     font-size: 14px;
 }
@@ -336,7 +329,7 @@ body {
 
 .current-price {
     color: #ff4757;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -487,12 +480,6 @@ body {
     .service-packages {
         padding: 12px 8px;
         padding-bottom: 120px;
-    }
-
-    .rating-section {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
     }
 
     .product-card {

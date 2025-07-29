@@ -62,3 +62,23 @@ function scrollToBottom() {
 function goBack() {
     window.history.back();
 }
+
+// Tab切换功能
+function switchTab(tabName) {
+    // 移除所有tab按钮的active类
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    tabBtns.forEach(btn => btn.classList.remove('active'));
+
+    // 隐藏所有tab内容
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabContents.forEach(content => content.style.display = 'none');
+
+    // 激活当前tab按钮
+    event.target.classList.add('active');
+
+    // 显示对应的tab内容
+    const targetTab = document.getElementById(tabName + '-tab');
+    if (targetTab) {
+        targetTab.style.display = 'block';
+    }
+}

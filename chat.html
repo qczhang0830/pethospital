@@ -25,124 +25,118 @@
     <!-- 聊天消息区域 -->
     <div class="chat-messages" id="chatMessages">
         <div class="message user-message">
-            <div class="message-content">对比两个更适合我家猫的体检团购</div>
+            <div class="message-content">哪个绝育套餐更适合我的猫猫</div>
         </div>
 
         <div class="message bot-message">
             <div class="message-content">
-                基于你看过的团购和你家8岁加菲猫的情况，建议你选择：
+                根据你的宠物情况，为你比较两个你看过的绝育团购：
 
-                <div class="recommendation-card">
-                    <img src="images/hospital-interior.jpg" alt="老年猫体检" class="service-image">
-                    <div class="service-info">
-                        <h4>老年/成年猫专项体检</h4>
-                        <div class="price">
-                            <span class="current-price">¥899</span>
-                            <span class="original-price">¥1268</span>
-                        </div>
-                        <button class="help-buy-btn">帮我买</button>
-                    </div>
+                <!-- Tab导航 -->
+                <div class="tab-navigation">
+                    <button class="tab-btn active" onclick="switchTab('summary')">AI总结</button>
+                    <button class="tab-btn" onclick="switchTab('compare')">细项对比</button>
                 </div>
 
-                <p class="recommendation-text">
-                    该团购包含心脏彩超和心脏听诊，更重风险预警，价格较高，但适合第一次做老年体检，8岁以上猫咪的全面健康评估。
-                </p>
+                <!-- AI总结Tab -->
+                <div class="tab-content" id="summary-tab">
+                    <p class="summary-text">术前检查 + 体内缝合 + 术后配药的安心版团购，第一次绝育更安心、更省心。</p>
 
-                <p>同时我也为你对比了你看过的团购项目，你可以根据个人需要来选择：</p>
+                    <p class="recommendation-text">
+                        超声刀技术伤口愈合快、猫咪痛感低、不会出现缝线排斥反应；增加生化、血凝检查，确保宠物的健康状态适合手术；提供3天的术后消炎止疼保障，针剂还可以替换为片剂，猫猫不用去医院也有最佳恢复保障。
+                    </p>
 
-                <div class="compare-section">
-                    <div class="compare-table">
-                        <div class="compare-item">
-                            <div class="compare-title">对比商品</div>
-                            <div class="compare-option">
-                                <div class="option-info">
-                                    <h5>成年犬猫全方位体检套餐</h5>
-                                    <div class="option-price">
-                                        <span class="price">¥569</span>
-                                        <span class="original">¥968</span>
-                                    </div>
-                                </div>
-                                <span class="arrow">></span>
+                    <div class="recommendation-card">
+                        <img src="images/hospital-interior.jpg" alt="犬猫安心绝育套餐" class="service-image">
+                        <div class="service-info">
+                            <h4>犬猫安心绝育套餐(含术前生化)</h4>
+                            <div class="price">
+                                <span class="current-price">¥288</span>
+                                <span class="original-price">¥620</span>
                             </div>
-                            <div class="compare-option">
-                                <div class="option-info">
-                                    <h5>老年/成年猫专项体检</h5>
-                                    <div class="option-price">
-                                        <span class="price">¥899</span>
-                                        <span class="original">¥1268</span>
+                            <button class="help-buy-btn">帮我买</button>
+                        </div>
+                    </div>
+
+                    <p class="recommendation-text">
+                        可以告诉我你家猫咪的年龄（例如：不到5个月 / 6-9个月 / 已成年）以及身体情况（是否有基础疾病），我可以帮你更精准的推荐绝育套餐哦~
+                    </p>
+                </div>
+
+                <!-- 细项目对比Tab -->
+                <div class="tab-content" id="compare-tab" style="display: none;">
+                    <div class="compare-section">
+                        <div class="compare-table">
+                            <div class="compare-item">
+                                <div class="compare-title">对比商品</div>
+                                <div class="compare-option">
+                                    <div class="option-info">
+                                        <h5>犬猫经济版绝育手术</h5>
+                                        <div class="option-price">
+                                            <span class="price">¥169</span>
+                                            <span class="original">¥268</span>
+                                        </div>
                                     </div>
+                                    <span class="arrow">></span>
                                 </div>
-                                <span class="arrow">></span>
+                                <div class="compare-option">
+                                    <div class="option-info">
+                                        <h5>犬猫安心绝育套餐(含术前生化)</h5>
+                                        <div class="option-price">
+                                            <span class="price">¥288</span>
+                                            <span class="original">¥620</span>
+                                        </div>
+                                    </div>
+                                    <span class="arrow">></span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="compare-item">
-                            <div class="compare-title">适用年龄</div>
-                            <div class="compare-value">1-7岁成年猫/犬</div>
-                            <div class="compare-value">1岁以上成年猫及8岁及以上老年猫</div>
-                        </div>
+                            <div class="compare-item">
+                                <div class="compare-title">适用场景</div>
+                                <div class="compare-value">预算优选，需主人照护</div>
+                                <div class="compare-value">价格适中，猫咪舒适度更高</div>
+                            </div>
 
-                        <div class="compare-item">
-                            <div class="compare-title">适用宠物</div>
-                            <div class="compare-value">犬猫均可用</div>
-                            <div class="compare-value">仅猫可用</div>
-                        </div>
+                            <div class="compare-item">
+                                <div class="compare-title">适用宠物</div>
+                                <div class="compare-value">年轻健康无病史</div>
+                                <div class="compare-value">年长、有病史</div>
+                            </div>
 
-                        <div class="compare-item">
-                            <div class="compare-title">适用场景</div>
-                            <div class="compare-value">健康预检或打疫苗前检查</div>
-                            <div class="compare-value">第一次做全面老年体检，有慢病高风险的情况</div>
-                        </div>
+                            <div class="compare-item">
+                                <div class="compare-title">术前检查</div>
+                                <div class="compare-value">无</div>
+                                <div class="compare-value">含肝肾等生化检查</div>
+                            </div>
 
-                        <div class="compare-item">
-                            <div class="compare-title">基础检查</div>
-                            <div class="compare-value checkmark">✅</div>
-                            <div class="compare-value checkmark">✅</div>
-                        </div>
+                            <div class="compare-item">
+                                <div class="compare-title">麻醉方式</div>
+                                <div class="compare-value">呼吸麻醉</div>
+                                <div class="compare-value">呼吸麻醉</div>
+                            </div>
 
-                        <div class="compare-item">
-                            <div class="compare-title">血常规</div>
-                            <div class="compare-value checkmark">✅</div>
-                            <div class="compare-value checkmark">✅</div>
-                        </div>
+                            <div class="compare-item">
+                                <div class="compare-title">手术方式</div>
+                                <div class="compare-value">外缝（需拆线）</div>
+                                <div class="compare-value">内缝（免拆线）</div>
+                            </div>
 
-                        <div class="compare-item">
-                            <div class="compare-title">生化检查</div>
-                            <div class="compare-value">生化8项</div>
-                            <div class="compare-value">生化16项</div>
-                        </div>
+                            <div class="compare-item">
+                                <div class="compare-title">缝合方式</div>
+                                <div class="compare-value">开放式传统手术</div>
+                                <div class="compare-value">超声刀手术</div>
+                            </div>
 
-                        <div class="compare-item">
-                            <div class="compare-title">B超</div>
-                            <div class="compare-value">无</div>
-                            <div class="compare-value">·腹部B超<br>·心脏彩超</div>
-                        </div>
-
-                        <div class="compare-item">
-                            <div class="compare-title">影像检查</div>
-                            <div class="compare-value">无</div>
-                            <div class="compare-value">X光（正侧位）</div>
-                        </div>
-
-                        <div class="compare-item">
-                            <div class="compare-title">心电图</div>
-                            <div class="compare-value">无</div>
-                            <div class="compare-value checkmark">✅</div>
-                        </div>
-
-                        <div class="compare-item">
-                            <div class="compare-title">尿检普检</div>
-                            <div class="compare-value checkmark">✅</div>
-                            <div class="compare-value checkmark">✅</div>
+                            <div class="compare-item">
+                                <div class="compare-title">术后护理</div>
+                                <div class="compare-value">术后观察含消炎/止痛药</div>
+                                <div class="compare-value">术后观察含消炎/止痛药</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <p class="follow-up-text">还有什么想了解的对比信息吗，可以告诉我哦</p>
 
                 <div class="message-actions">
-                    <button class="action-btn">💬</button>
-                    <button class="action-btn">👍</button>
                     <button class="action-btn">👎</button>
                     <button class="action-btn share">📤</button>
                 </div>
